@@ -1,9 +1,9 @@
 import { uiChanger } from "./ui-changer.js";
 
-let todos = localStorage.getItem("todos")
+export let todos = localStorage.getItem("todos")
   ? JSON.parse(localStorage.getItem("todos"))
   : [];
-// ...existing code...
+
 export function getTodos() {
   return todos;
 }
